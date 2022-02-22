@@ -2,9 +2,6 @@ package com.bookstore.management;
 import com.bookstore.management.bean.Book;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
@@ -82,9 +79,9 @@ public class MagicOfBooks {
 		}
 		
 	
-	public void displayBookInformation() throws FileNotFoundException {
+	public void displayBookInformation() {
 		
-	/*	
+		
 	  List<Book> bookList = new ArrayList<>(bookMap.values());
 	  if (bookList.isEmpty()) 
 		{
@@ -93,23 +90,14 @@ public class MagicOfBooks {
 		else {
 			System.out.println("books is Empty");
 		}
-*/
-		BufferedReader reader = new BufferedReader(new FileReader("books.txt"));
-		reader.lines().forEach(System.out::println);
+
+
 		
 	}
-// to get number of records stored in book file 
+
 	public void countAllBooks() throws IOException {
-		BufferedReader reader = new BufferedReader(new FileReader("books.txt"));
-		int count = 0;
-		String s;
-		while((s=reader.readLine())!=null) {
-		count++;
-		}
 		
-		System.out.println("Number of books present in a store : " +count);
-		
-		//System.out.println("Number of books present in a store : "+bookMap.size());
+		System.out.println("Number of books present in a store : "+bookMap.size());
 		
 		
 	}
@@ -156,19 +144,7 @@ public class MagicOfBooks {
 	         
 	   }
 	
-	//to store book in file 
-	public void addBookToFile() throws IOException {
-		List<Book> bookList = new ArrayList<>(bookMap.values());
-		FileWriter writer = new FileWriter("books.txt", true);
-		for (Book book: bookList) {
-			writer.write(book+"\n");
-			
-		}
-		
-		writer.close();
-		System.out.println("Book added successfully");
-			
-	}
+
 	
 	
 	
