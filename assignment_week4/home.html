@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <!-- CSS only -->
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <script src="script.js"> </script>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+
+<body>
+    <header class = "header">
+        <h1>Search for Movies!</h1>
+    </header>
+    <div class="card text-center" id="mainbody">
+        <div class="card-header">
+            <ul class="nav nav-pills card-header-pills m-a-2" >
+                <li class="nav-item">
+                    <a class="nav-link active" onclick="comingSoonMovies();" href="#">Movies Coming</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" onclick="inTheatersMovies();" href="#">Movies In Theaters</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" onclick="topRatedIndia();" href="#">Top Rated India</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" onclick="topRatedMovies();" href="#">Top Rated Movies</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link active" onclick="loadFavorite();" href="#">My Favorite</a>
+                </li>
+            </ul>
+        </div>
+
+        <main>
+            <div class="container-fluid">
+                <header> <h2>Select Movies Of Your Choice</h2></header>
+                <div class ="search">
+                </div>
+                <div class="row">
+                </div>
+            </div>
+        </main>
+    </div>
+    <div id="id02" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom modal1">
+            <div id="defnition2">
+                <p style="height:50%; margin:1.5em; width:97%;" id="cardbody">
+                    <div class="container1">
+                        <div class="card">
+                            
+                            <div class="card-body">
+                                <h5 class="card-title">Card Title</h5>
+                                <p class="card-text">
+                                   
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>
