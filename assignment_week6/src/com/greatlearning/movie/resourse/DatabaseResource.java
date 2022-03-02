@@ -11,7 +11,7 @@ public class DatabaseResource {
 		super();
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/assignment6_rachana", "root", "Sukuna@99");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/assignment6_rachana", "root", "*****");
 		} catch (Exception e) {
 			System.out.println("Db Connection error " + e);
 		}
