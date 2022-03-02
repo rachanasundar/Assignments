@@ -1,7 +1,0 @@
-Book [bookId=123, bookName=Book1, price=158, genre=Autobiography, noOfCopyesSold=56]
-Book [bookId=254, bookName=Book2, price=456, genre=Autobiography, noOfCopyesSold=52]
-Book [bookId=24, bookName=Book3, price=250, genre=Fiction, noOfCopyesSold=23]
-Book [bookId=159, bookName=Book4, price=254, genre=Fantasy, noOfCopyesSold=15]
-Book [bookId=142, bookName=Book5, price=310, genre=Fiction, noOfCopyesSold=12]
-Book [bookId=111, bookName=Book6, price=154, genre=Drama, noOfCopyesSold=5]
-Book [bookId=146, bookName=Book7, price=246, genre=Drama, noOfCopyesSold=75]
