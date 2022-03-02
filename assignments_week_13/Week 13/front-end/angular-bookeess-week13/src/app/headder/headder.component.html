@@ -1,0 +1,37 @@
+<div class ="div-1">
+ 
+    <div class ="div-tag">
+  
+    <h1>
+      Books Store
+    </h1>
+    <hr size="10px" color="black">
+    </div>
+    <ul class="nav justify-content-end">
+     <li class="nav-item">
+       <a class="nav-link" routerLink="viewBook">View Books</a>
+     </li>
+     <li class="nav-item" *ngIf="adminFlag">
+      <a class="nav-link" routerLink="user">User</a>
+    </li>
+     <li class="nav-item">
+       <div *ngIf ="!flag">
+      <a class="nav-link" routerLink="userLogin">Log In As User</a>
+    </div>
+    
+    </li>
+    <li class="nav-item">
+        <div *ngIf ="!flag">
+      <a class="nav-link" routerLink="adminLogin">Log In As Admin</a></div>
+    </li>
+    <li>
+      <div *ngIf ="flag">
+        <input type="button" (click)="logOut()" value="Log Out">
+      </div>
+    </li>
+   </ul>
+   
+    <router-outlet></router-outlet>
+  
+   
+   </div>

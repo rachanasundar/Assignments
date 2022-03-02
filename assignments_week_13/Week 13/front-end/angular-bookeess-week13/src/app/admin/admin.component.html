@@ -1,0 +1,28 @@
+<div>
+    <h3>Serach A Users Like Book</h3>
+</div>
+<form #findRef="ngForm" (ngSubmit)="find(findRef)">
+    <input type="text" name="user" ngModel class="from-control" ><br>
+    <input type="submit" value="Search">
+</form><br>
+<h2>Liked Books Of a User</h2>
+<div class="row row-cols-1 row-cols-md-3 g-4" >
+   
+    <div *ngFor="let book of likedBook">
+    <div class="colo">
+        <div class="card h-100">
+          <img src="{{book.bookImageUrl}}" class="card-img-top" alt="..." id="img">
+          <div class="card-body">
+            <h5 class="card-title">{{book.keys.bookId}}<br>{{book.bookName}}</h5>
+            <p class="card-text">
+               Author: {{book.author}}<br>
+                Genre:{{book.bookGenre}}<br>
+                Price: {{book.bookPrice}}<br>
+                Rating:{{book.bookRating}}<br>
+            </p>
+                        
+          
+        </div>
+      </div>
+    </div>
+</div>

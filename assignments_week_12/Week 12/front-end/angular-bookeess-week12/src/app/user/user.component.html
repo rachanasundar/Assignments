@@ -1,0 +1,66 @@
+<div>
+    {{deleteMsg}}<br>
+    {{updateMsg}}<br>
+    {{storeMsg}}<br>
+</div>
+<div *ngIf="storeFlag"> 
+    <form (ngSubmit)="storeuser()">
+        <label>Email</label>
+        <input type="email" name="emailId" [(ngModel)]="emailId" ><br>
+        <label>Name</label>
+        <input type="text" name="username" [(ngModel)]="username"><br>
+        <label>Password</label>
+        <input type="text" name="userPassword" [(ngModel)]="userPassword"><br>
+        <input type="submit" value="Add">
+        </form>
+</div>
+
+<div *ngIf="updateFlag">
+   <h5> Update User Details
+</h5>
+<form (ngSubmit)="updateName()">
+<label>Email</label>
+<input type="email" name="emailId" [(ngModel)]="emailId" readonly><br>
+<label>Name</label>
+<input type="text" name="username" [(ngModel)]="username">
+<input type="submit" value="Update">
+</form>
+<form (ngSubmit)="updatePass()">
+    <label>Email</label>
+    <input type="email" name="emailId" [(ngModel)]="emailId" readonly><br>
+    <label>Password</label>
+    <input type="text" name="userPassword" [(ngModel)]="userPassword">
+    <input type="submit" value="Update">
+</form>
+</div><br>
+<br>
+<div>
+    <input type="button" value="Add User" (click)="storeUserBtn()"/>
+</div>
+<div align="center">
+    <h3>
+        List Of Users:
+    </h3>
+    <table class ="table table-striped">
+        <tr>
+            <th>Email Id</th>
+            <th>Name </th>
+            <th>Password</th>
+            <th>Update </th>
+            <th>Delete </th>
+        </tr>
+        <tr *ngFor="let user of usersList">
+           
+            <td>{{user.emailId}}</td>
+            <td>{{user.username}}</td>
+            <td>{{user.userPassword}}</td>
+            <td>
+                <input type="button" value="Update" (click)="updateUserBtn(user)"/>
+            </td>
+            <td>
+                <input type="button" value="Delete" (click)="deleteUser(user.emailId)"/>
+            </td>
+
+        </tr>
+    </table>
+</div>

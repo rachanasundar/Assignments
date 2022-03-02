@@ -1,0 +1,45 @@
+<div align="center">
+<div>
+    <h4>Welcome User </h4>
+</div>
+<div *ngIf="!flag">
+<h5>
+    {{loginResult}}
+    {{signinResult}}   <br> 
+   
+</h5>
+</div>
+<div *ngIf="flag">
+    <div *ngIf= "!signinFlag">
+   
+    <form [formGroup]="loginRef" (ngSubmit)="checkUser()">
+        <label>Email</label>
+        <input type="email" formControlName="emailId" /><br>
+        <label>Password</label>
+        <input type="password" formControlName="userPassword" /><br>
+        <input type="submit" value="Log In" [disabled]="loginRef.invalid">
+        <input type="reset" value="Reset">
+    </form>
+    <br>
+    <div> 
+        <input type="button" value="Sign In" (click)="signIn()">
+    </div>
+</div>
+    <br>
+    <div *ngIf="signinFlag">
+       
+        <form [formGroup]="signinRef" (ngSubmit)="storeUser()">
+            <label>Email</label>
+            <input type="email" formControlName="emailId" /><br>
+            <label>Name</label>
+            <input type="text" formControlName="username"/><br>
+            <label>Password</label>
+            <input type="password" formControlName="userPassword" /><br>
+            <input type="submit" value="Sign In" [disabled]="signinRef.invalid">
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+</div>
+
+</div>
+

@@ -1,0 +1,23 @@
+.div-tag{
+    text-align: center;
+}
+
+#img{
+    width: 180px;
+    height: 250px;
+}
+
+.card-body{
+    width: 180px;
+    height: 270px;
+    background-color: gray;
+}
+
+.add{
+    background-color: maroon;
+    
+}
+.update{
+    background-color: orange;
+    
+}

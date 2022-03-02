@@ -1,0 +1,131 @@
+<div>
+     <h5>{{Msg}}<br>
+      {{deleteMsg}}
+     </h5>
+  
+</div>
+<div class="div-tag">
+    <div><h4> If you don't like to read, you haven't found the right book. 
+        <br>Find a book to read from our collections
+        </h4>
+        <span *ngIf ="flag">
+          Welcome {{name}}
+        </span>
+    </div>
+
+
+    <div class="row row-cols-1 row-cols-md-3 g-4" >
+        <div *ngFor="let book of books">
+        <div class="colo">
+            <div class="card h-100">
+              <img src="{{book.bookImageUrl}}" class="card-img-top" alt="..." id="img">
+              <div class="card-body">
+                <h5 class="card-title">{{book.bookId}}<br>{{book.bookName}}</h5>
+                <p class="card-text">
+                   Author: {{book.author}}<br>
+                    Genre:{{book.bookGenre}}<br>
+                    Price: {{book.bookPrice}}<br>
+                    Rating:{{book.bookRating}}<br>
+                </p>
+                            
+              </div>
+              <div *ngIf="adminFlag">
+                <input type="button" value="Update" (click)="updateBtn(book)"><br>
+                <input type="button" value="Delete" (click)="deleteBook(book.bookId)"><br>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <br>
+     
+    <div *ngIf="addBookFlag">
+   
+      <form (ngSubmit)="addBook()">
+      <label>Book Id</label>
+      <input type="text" [(ngModel)]="bookId"><br>
+      <label> Book Name</label>
+       <input type="text" [(ngModel)]="bookName"><br>
+       <label> Author</label>
+       <input type="text" [(ngModel)]="author"><br>
+       <label> Book Genre</label>
+       <input type="text" [(ngModel)]="bookGenre"><br>
+       <label> Book ImageUrl</label>
+       <input type="text" [(ngModel)]="bookImageUrl"><br>
+       <label> Book Price</label>
+       <input type="text" [(ngModel)]="bookPrice"><br>
+       <label> Book Rating</label>
+       <input type="text" [(ngModel)]="bookRating"><br>
+       <input type="submit" value="Add">
+    </form>
+    </div>
+    <div *ngIf="updateFlag">
+      <form [formGroup]="nameRef" (ngSubmit)="updateBookName()">
+        <label>Book Id = {{bookId}}</label>
+        <input type="hidden" formControlName="bookId" readonly value="{{bookId}}">
+        <label> Book Name</label>
+         <input type="text" formControlName="bookName">
+         <input type="submit" value="Update">
+      </form>
+  
+    </div>
+   
+    <div *ngIf="updatePriceFlag">
+      <form [formGroup]="priceRef" (ngSubmit)="updatePrice()">
+        <label>Book Id = {{bookId}}</label>
+        <input type="hidden" formControlName="bookId" readonly value={{bookId}}>
+        <label> Book Price</label>
+         <input type="text" formControlName="bookPrice">
+         <input type="submit" value="Update">
+      </form> 
+    </div>
+
+    <div *ngIf="updateAuthorFlag">
+      <form [formGroup]="authorRef" (ngSubmit)="updateAuthor()">
+        <label>Book Id = {{bookId}}</label>
+        <input type="hidden" formControlName="bookId" readonly value={{bookId}}>
+        <label> Book Author</label>
+         <input type="text" formControlName="author">
+         <input type="submit" value="Update">
+        
+      </form>
+    </div>
+
+    <div *ngIf="updateGenreFlag">
+      <form [formGroup]="genreRef" (ngSubmit)="updateGenre()">
+        <label>Book Id = {{bookId}}</label>
+        <input type="hidden" formControlName="bookId" value={{bookId}}>
+        <label> Book Genre</label>
+         <input type="text" formControlName="bookGenre">
+         <input type="submit" value="Update">
+        
+      </form>
+    </div>
+    <div *ngIf="updateRatingFlag">
+      <form [formGroup]="rateRef" (ngSubmit)="updateRating()">
+        <label>Book Id = {{bookId}}</label>
+        <input type="hidden" formControlName="bookId" readonly value={{bookId}}>
+        <label> Book Rating</label>
+         <input type="text" formControlName="bookRating">
+         <input type="submit" value="Update">
+        
+      </form>
+    </div>
+    <div>
+      <h5>{{Msg}}</h5>
+    </div>
+    <div *ngIf ="updateFlag" class ="update">
+      <label>Update Book {{bookId}} :</label>
+      <input type="button" value="Update Book Name" (click)="updateBookNameBtn()">
+      <input type="button" value="Update Author" (click)="updateAuthorBtn()">
+      <input type="button" value="Update Price" (click)="updatePriceBtn()">
+      <input type="button" value="Update Rating" (click)="updateRatingBtn()">
+      <input type="button" value="update Genre" (click)="updateGenreBtn()">
+    
+    </div>
+    <div class = "add">
+      <input type="button" value="Click Here to Add Book" (click)="addBookBtn()">
+    </div>
+  
+   
+</div>
