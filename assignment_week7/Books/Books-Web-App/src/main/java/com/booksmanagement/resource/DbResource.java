@@ -13,7 +13,7 @@ public class DbResource {
 	public static Connection getDbConnection() {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/books_rachana", "root", "Sukuna@99");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/books_rachana", "root", "*****");
 			return con;
 		} catch (Exception e) {
 		}
