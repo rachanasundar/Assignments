@@ -59,27 +59,29 @@ public class LogInController extends HttpServlet {
 		
 		//Login
 		if(request.getParameter("phoneNumber")!= null) {
+			
 		long userNumber= Long.parseLong(request.getParameter("phoneNumber"));
 		String pass= request.getParameter("pass");
 		String loginResult = service.checkPassword(userNumber, pass);
 		String userName=service.getUserName(userNumber);
-		
+		if(!loginResult.contains("Fail")) {
 		hs.setAttribute("objectName", userName);
-		hs.setAttribute("objNumber", userNumber);
+		hs.setAttribute("objNumber", userNumber);}
 		hs.setAttribute("objLogInResult", loginResult);
 		rd1.include(request, response);
 		}
 		
 		//Sign in
 		else if(request.getParameter("phone_number") != null) {
+		
 			long phoneNumb= Long.parseLong(request.getParameter("phone_number"));
 			String email = request.getParameter("email");
 			String name = request.getParameter("name");
 			String password= request.getParameter("password");
 			String signinResult = service.createAccount(new LogIn(phoneNumb, email, name, password));
-			
+			if(!signinResult.contains("Fail")) {
 			hs.setAttribute("objectName", name);
-			hs.setAttribute("objNumber", phoneNumb);
+			hs.setAttribute("objNumber", phoneNumb);}
 			hs.setAttribute("objLogInResult",signinResult);
 			rd1.include(request, response);
 		}
