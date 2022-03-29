@@ -41,6 +41,7 @@ public class MagicOfBooks {
 			book.setBookStatus(scanner.next());
 			
 			bookMap.put(book.getBookId(), book);
+			System.out.println("Book added successfully");
 			
 }
 	 
@@ -50,7 +51,7 @@ public class MagicOfBooks {
 		System.out.println("Enter book id you want to delete");
     	int id=scanner.nextInt();
     	bookMap.remove(id);
-		
+			System.out.println("Book deleted");
 	}
 	 
 	 //to update a book
@@ -76,6 +77,7 @@ public class MagicOfBooks {
 		b.setBookStatus(scanner.next());
 		
 		bookMap.replace(b.getBookId(), b);
+		System.out.println("Book Updated Successfully");
 		}
 		
 	
@@ -83,7 +85,7 @@ public class MagicOfBooks {
 		
 		
 	  List<Book> bookList = new ArrayList<>(bookMap.values());
-	  if (bookList.isEmpty()) 
+	  if (!bookList.isEmpty()) 
 		{
 		bookList.stream().forEach(book->System.out.println(book));
 		}
@@ -106,6 +108,8 @@ public class MagicOfBooks {
 	public void genreAutobiography() {
 		List<Book> bookListA = new ArrayList<>(bookMap.values());
 		bookListA.stream().filter(s->s.getGenre().equalsIgnoreCase("Autobiography")).forEach(s->System.out.println(s));
+			if(bookListA.stream().filter(s->s.getGenre().equalsIgnoreCase("Autobiography")).count()==0)
+			System.out.println("No books found");
 	}
 	//to display the book list from low to high price
 	public void lowToHigh(int i) {
