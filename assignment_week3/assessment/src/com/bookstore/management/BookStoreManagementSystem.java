@@ -37,7 +37,7 @@ public class BookStoreManagementSystem {
 						for(int i=1;i<=n;i++) {
 							mBook.addBook();
 							}
-						mBook.addBookToFile();
+						
 						break;
 				
 			case 2://Delete a book
@@ -73,7 +73,7 @@ public class BookStoreManagementSystem {
 				        break;
 				 default:System.out.println("Wrong choice.!");
 				 break;
-				}
+				}break;
 			
 			default:
 				System.out.println("Wrong choice.!");
