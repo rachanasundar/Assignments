@@ -70,6 +70,8 @@
 	<!-- This is showing error but its still working when the page runs.  -->
 		<!--<jsp:include page="displayBooks.jsp"></jsp:include>__-->
 		<jsp:include page="/BooksController"></jsp:include>
+		
+		
 	</ul>
  </div>
 

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="assignment_week01/src"/>
+	<classpathentry kind="src" path="assignment_week2/src"/>
+	<classpathentry kind="src" path="assignment_week3/assessment/src"/>
+	<classpathentry kind="src" path="assignment_week6/src"/>
+	<classpathentry kind="src" path="assignment_week7/Books 2.O/Books-Web-App/src/main/java"/>
+	<classpathentry kind="src" path="assignment_week7/Books/Books-Web-App/src/main/java"/>
+	<classpathentry kind="src" path="assignment_week8/Books_App/Books-App/src/main/java"/>
+	<classpathentry kind="src" path="assignment_week9/SpringBookManagement/.mvn/wrapper"/>
+	<classpathentry kind="src" path="assignment_week9/SpringBookManagement/src/main/java"/>
+	<classpathentry kind="src" path="assignment_week9/SpringBookManagement/src/test/java"/>
+	<classpathentry kind="src" path="assignments_week_10/src/main/java"/>
+	<classpathentry kind="src" path="assignments_week_11/Week 11/AdminClient/src/main/java"/>
+	<classpathentry kind="src" path="assignments_week_11/Week 11/AdminClient/src/test/java"/>
+	<classpathentry kind="src" path="assignments_week_11/Week 11/EurekaServer/src/main/java"/>
+	<classpathentry kind="src" path="assignments_week_11/Week 11/EurekaServer/src/test/java"/>
+	<classpathentry kind="src" path="assignments_week_11/Week 11/UserClient/src/main/java"/>
+	<classpathentry kind="src" path="assignments_week_11/Week 11/UserClient/src/test/java"/>
+	<classpathentry kind="src" path="assignments_week_12/Week 12/back-end/AdminClient/src/main/java"/>
+	<classpathentry kind="src" path="assignments_week_12/Week 12/back-end/AdminClient/src/test/java"/>
+	<classpathentry kind="src" path="assignments_week_12/Week 12/back-end/EurekaServer/src/main/java"/>
+	<classpathentry kind="src" path="assignments_week_12/Week 12/back-end/EurekaServer/src/test/java"/>
+	<classpathentry kind="src" path="assignments_week_12/Week 12/back-end/UserClient/src/main/java"/>
+	<classpathentry kind="src" path="assignments_week_12/Week 12/back-end/UserClient/src/test/java"/>
+	<classpathentry kind="src" path="assignments_week_13/Week 13/back-end/AdminClient/src/main/java"/>
+	<classpathentry kind="src" path="assignments_week_13/Week 13/back-end/AdminClient/src/test/java"/>
+	<classpathentry kind="src" path="assignments_week_13/Week 13/back-end/EurekaServer/src/main/java"/>
+	<classpathentry kind="src" path="assignments_week_13/Week 13/back-end/EurekaServer/src/test/java"/>
+	<classpathentry kind="src" path="assignments_week_13/Week 13/back-end/UserClient/src/main/java"/>
+	<classpathentry kind="src" path="assignments_week_13/Week 13/back-end/UserClient/src/test/java"/>
+	<classpathentry kind="lib" path="assignment_week6/hamcrest-all-1.3.jar"/>
+	<classpathentry kind="lib" path="assignment_week6/junit-4.12.jar"/>
+	<classpathentry kind="lib" path="assignment_week6/mysql-connector-java-8.0.27.jar"/>
+	<classpathentry kind="lib" path="assignment_week7/Books 2.O/Books-Web-App/src/main/webapp/WEB-INF/lib/mysql-connector-java-8.0.27.jar"/>
+	<classpathentry kind="lib" path="assignment_week7/Books/Books-Web-App/src/main/webapp/WEB-INF/lib/mysql-connector-java-8.0.27.jar"/>
+	<classpathentry kind="lib" path="assignments_week_10/target/Week10-Assessment-0.0.1-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="assignments_week_11/Week 11/AdminClient/.mvn/wrapper/maven-wrapper.jar"/>
+	<classpathentry kind="lib" path="assignments_week_11/Week 11/EurekaServer/.mvn/wrapper/maven-wrapper.jar"/>
+	<classpathentry kind="lib" path="assignments_week_11/Week 11/UserClient/.mvn/wrapper/maven-wrapper.jar"/>
+	<classpathentry kind="lib" path="assignments_week_12/Week 12/back-end/AdminClient/.mvn/wrapper/maven-wrapper.jar"/>
+	<classpathentry kind="lib" path="assignments_week_12/Week 12/back-end/EurekaServer/.mvn/wrapper/maven-wrapper.jar"/>
+	<classpathentry kind="lib" path="assignments_week_12/Week 12/back-end/UserClient/.mvn/wrapper/maven-wrapper.jar"/>
+	<classpathentry kind="lib" path="assignments_week_13/Week 13/back-end/AdminClient/.mvn/wrapper/maven-wrapper.jar"/>
+	<classpathentry kind="lib" path="assignments_week_13/Week 13/back-end/EurekaServer/.mvn/wrapper/maven-wrapper.jar"/>
+	<classpathentry kind="lib" path="assignments_week_13/Week 13/back-end/UserClient/.mvn/wrapper/maven-wrapper.jar"/>
+	<classpathentry kind="output" path="assignment_week01/bin"/>
+</classpath>

@@ -8,11 +8,10 @@ import java.util.LinkedHashSet;
 
 //This class is used to get the  Count of Employees from each city
 public class DataStructureB extends Employee {
-	
+	//To create a ArrayList object of type string
+			ArrayList<String> city=new ArrayList<>();
 	public void cityNameCount(ArrayList<Employee> employees) {
-		//To create a ArrayList object of type string
-		ArrayList<String> city=new ArrayList<>();
-		
+				
 		//To create a object of Iterator of type Employee
 		Iterator<Employee> ii=employees.iterator();
 		while(ii.hasNext())

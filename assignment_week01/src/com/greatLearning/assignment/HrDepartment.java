@@ -35,4 +35,10 @@ public class HrDepartment  extends SuperDepartment {
 		return "Complete the Work by End Of the Day";
 
 }
+
+	@Override
+	protected String getTechStackInformation() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

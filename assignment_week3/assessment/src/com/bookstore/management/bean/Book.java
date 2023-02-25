@@ -23,6 +23,16 @@ public class Book {
 	public int getPrice() {
 		return price;
 	}
+	public Book(int bookId, String bookName, int price, String genre, int noOfCopyesSold, String bookStatus) {
+		super();
+		this.bookId = bookId;
+		this.bookName = bookName;
+		this.price = price;
+		this.genre = genre;
+		this.noOfCopyesSold = noOfCopyesSold;
+		this.bookStatus = bookStatus;
+	}
+
 	public String getGenre() {
 		return genre;
 	}

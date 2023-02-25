@@ -6,10 +6,9 @@ import java.util.Iterator;
 
 //This class is used to get Names of all Employees in the sorted order are
 public class DataStructureA extends Employee{
-	
-	public void sortingNames(ArrayList<Employee> employees) {
-		//To create a ArrayList object
+	//To create a ArrayList object
 		ArrayList<String> sortedName= new ArrayList<>();
+	public void sortingNames(ArrayList<Employee> employees) {
 		
 		//To create a object of Iterator of type Employee
 		Iterator<Employee> ii=employees.iterator();

@@ -15,7 +15,7 @@ public class MoviesDao {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	
+	//to return the singleton instance of class
 	private static final MoviesDao  movieDao = new MoviesDao();
 	
 	public static MoviesDao getInstance() {

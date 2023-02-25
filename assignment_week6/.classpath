@@ -7,8 +7,8 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
-	<classpathentry kind="lib" path="D:/HCL ASSIGNMENTT/week6/assignment_week6/week6_rachana/assignmnet_week6/hamcrest-all-1.3.jar"/>
-	<classpathentry kind="lib" path="D:/HCL ASSIGNMENTT/week6/assignment_week6/week6_rachana/assignmnet_week6/junit-4.12.jar"/>
-	<classpathentry kind="lib" path="D:/HCL ASSIGNMENTT/week6/assignment_week6/week6_rachana/assignmnet_week6/mysql-connector-java-8.0.27.jar"/>
+	<classpathentry kind="lib" path="hamcrest-all-1.3.jar"/>
+	<classpathentry kind="lib" path="junit-4.12.jar"/>
+	<classpathentry kind="lib" path="mysql-connector-java-8.0.27.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -52,6 +52,12 @@ Object objNumb=session.getAttribute("objNumber");
 Object obj = session.getAttribute("objBooks");
 
 List<Books> listOfBooks = (List<Books>)obj;
+if(listOfBooks.isEmpty()){
+	%>
+	<h3>No books to display</h3>
+	<%
+}
+else{
 Iterator<Books> ii = listOfBooks.iterator();
 
 if(objName==null){
@@ -123,7 +129,7 @@ if(objName!=null){ %>
 	</section>
 	
 <%	
-	}
+	}}
 %>
 <%
 if(objName!=null){

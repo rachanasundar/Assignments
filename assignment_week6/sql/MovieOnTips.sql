@@ -1,5 +1,5 @@
-create database assignment6_rachana;
-use assignment6_rachana;
+create database MoveOnTips;
+use MoveOnTips;
 
 create table genre(
 genre_id int primary key,

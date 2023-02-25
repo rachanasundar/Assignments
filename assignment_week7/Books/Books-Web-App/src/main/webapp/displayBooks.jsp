@@ -71,6 +71,12 @@
 	BooksService books= new BooksService();
 	
 	List<Books> listOfBooks = books.getAllBooks();
+	if(listOfBooks.isEmpty()){
+		%>
+		<h3> No book to display </h3>
+		<%
+	}
+	else{
 	Iterator<Books> ii = listOfBooks.iterator();
 	
 	%>
@@ -121,7 +127,7 @@ if(objName!=null){ %>
 	</section>
 	
 <%	
-	}
+	}}
 %>
 
 

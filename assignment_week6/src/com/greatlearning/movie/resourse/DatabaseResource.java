@@ -10,15 +10,16 @@ public class DatabaseResource {
 	private DatabaseResource() {
 		super();
 		try {
+			//to establish database connection 
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/assignment6_rachana", "root", "*****");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/MoveOnTips?createDatabaseIfNotExit=true && useSSL=false", "root", "root");
 		} catch (Exception e) {
 			System.out.println("Db Connection error " + e);
 		}
 
 	}
 	
-	//to return the instance of class
+	//to return the singleton instance of class
 	private static final DatabaseResource database = new DatabaseResource();
 	 
 	 public static DatabaseResource getInstance() {

@@ -33,6 +33,10 @@ public abstract class SuperDepartment {
 			else 								// on Weekdays 
 				return "WORKING DAY";
 		}
+
+	protected abstract String getTechStackInformation();
+
+	protected abstract String doActivity();
 	
 		
 		
